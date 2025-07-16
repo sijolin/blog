@@ -150,50 +150,50 @@ export const integ: IntegrationUserConfig = {
   waline: {
     enable: true,
     // Server service link
-    server: 'https://example.sijolin.com/ ',
-    // Refer https://waline.js.org/en/guide/features/emoji.html
-    emoji: ['bmoji', 'weibo'],
-    // Refer https://waline.js.org/en/reference/client/props.html
-    additionalConfigs: {
-      // search: false,
-      pageview: true,
-      comment: true,
-      locale: {
-        reaction0: 'Like',
-        placeholder: '真正重要的东西，用眼睛是看不见的。」——写下你的想法吧',
-        nick: '昵称',
-        mail: '邮箱',
-        link: '网址（可选）',
-      },
-
-      // 图片上传功能
-      imageUploader: false,
-
-      // 表情面板设置
-      emojiCDN: '', // 自定义表情CDN
-      emojiMaps: {}, // 自定义表情映射
-
-      // 字数限制
-      wordLimit: 0, // 0表示无限制
-
-      // 评论列表分页
-      pageSize: 10,
-
-      // 必填项设置
-      requiredFields: ['nick', 'mail'], // 必须填写昵称和邮箱
-
-      // 匿名评论
-      anonymous: true, // 允许匿名评论
-
-      // 复制评论链接
-      copyright: true, // 显示版权信息
-
-      // 自定义CSS类名
-      meta: ['nick', 'mail', 'link'],
-      metaPlaceholder: {
-        nick: '请输入昵称',
-        mail: '请输入邮箱地址',
-        link: '请输入网址(可选)'
+      server: 'https://example.sijolin.com/',
+      // Refer https://waline.js.org/en/guide/features/emoji.html
+      emoji: ['bmoji', 'weibo'],
+      // Refer https://waline.js.org/en/reference/client/props.html
+      additionalConfigs: {
+        // search: false,
+        pageview: true,
+        comment: true,
+        locale: {
+          reaction0: 'Like',
+          placeholder: '真正重要的东西，用眼睛是看不见的。」——写下你的想法吧',
+          nick: '昵称',
+          mail: '邮箱',
+          link: '网址（可选）',
+        },
+  
+        // 图片上传功能
+        imageUploader: false,
+  
+        // 表情面板设置
+        emojiCDN: '', // 自定义表情CDN
+        emojiMaps: {}, // 自定义表情映射
+  
+        // 字数限制
+        wordLimit: 0, // 0表示无限制
+  
+        // 评论列表分页
+        pageSize: 10,
+  
+        // 必填项设置
+        requiredFields: ['nick', 'mail'], // 必须填写昵称和邮箱
+  
+        // 匿名评论
+        anonymous: true, // 允许匿名评论
+  
+        // 复制评论链接
+        copyright: true, // 显示版权信息
+  
+        // 自定义CSS类名
+        meta: ['nick', 'mail', 'link'],
+        metaPlaceholder: {
+          nick: '请输入昵称',
+          mail: '请输入邮箱地址',
+          link: '请输入网址(可选)'
       }
     }
   }
