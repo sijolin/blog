@@ -3,29 +3,29 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: "Sijolin's Blog",
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: 'Sijolin',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description: '路虽远，行则将至。',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'en-US',
+    lang: 'zh_CN',
     attrs: 'en_US',
     // Date locale
-    dateLocale: 'en-US',
+    dateLocale: 'zh-CN',
     dateOptions: {
-      day: 'numeric',
+      year: 'numeric',
       month: 'short',
-      year: 'numeric'
+      day: 'numeric'
     }
   },
   /** Set a logo image to show in the homepage. */
   logo: {
     src: 'src/assets/avatar.png',
-    alt: 'Avatar'
+    alt: 'Sijolin Avatar'
   },
 
   // === Global configuration ===
@@ -36,19 +36,18 @@ export const theme: ThemeUserConfig = {
   // Still in test
   head: [
     /* Telegram channel */
-    // {
-    //   tag: 'meta',
-    //   attrs: { name: 'telegram:channel', content: '@cworld0_cn' },
-    //   content: ''
-    // }
+    {
+      tag: 'meta',
+      attrs: { name: '', content: '' },
+      content: ''
+    }
   ],
   customCss: [],
 
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
+      { title: '博客', link: '/blog' },
       { title: 'Projects', link: '/projects' },
       { title: 'Links', link: '/links' },
       { title: 'About', link: '/about' }
@@ -63,18 +62,18 @@ export const theme: ThemeUserConfig = {
     links: [
       // Registration link
       {
-        title: 'Moe ICP 114514',
+        title: '萌 ICP 备 114514号',
         link: 'https://icp.gov.moe/?keyword=114514',
         style: 'text-sm' // Uno/TW CSS class
       },
       {
-        title: 'Travelling',
+        title: '开往',
         link: 'https://www.travellings.cn/go.html',
         style: 'text-sm'
       },
       // Privacy Policy link
       {
-        title: 'Site Policy',
+        title: '网站政策',
         link: '/terms/list',
         pos: 2 // position set to 2 will be appended to copyright line
       }
@@ -82,7 +81,10 @@ export const theme: ThemeUserConfig = {
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    social: {
+      github: 'https://github.com/sijolin',
+      email: 'mailto:vty4190@qq.com'
+     }
   },
 
   content: {
