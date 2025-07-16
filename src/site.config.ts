@@ -63,19 +63,20 @@ export const theme: ThemeUserConfig = {
       // Registration link
       {
         title: '萌 ICP 备 114514号',
-        link: 'https://icp.gov.moe/?keyword=114514',
-        style: 'text-sm' // Uno/TW CSS class
+        link: 'https://www.travellings.cn/go.html',
+        style: 'text-sm opacity-75 hover:opacity-100' // 悬停变色 + 字体大小
       },
       {
         title: '开往',
         link: 'https://www.travellings.cn/go.html',
-        style: 'text-sm'
+        style: 'text-sm font-medium hover:text-blue-500' // 悬停变色 + 加粗
       },
       // Privacy Policy link
       {
-        title: '网站政策',
-        link: '/terms/list',
-        pos: 2 // position set to 2 will be appended to copyright line
+        title: '隐私政策',
+        link: '/privacy',
+        pos: 2, // position set to 2 will be appended to copyright line
+        style: 'text-sm hover:underline' // 悬停下划线
       }
     ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
