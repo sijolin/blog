@@ -25,6 +25,7 @@ import config from './src/site.config.ts'
 export default defineConfig({
   // Top-Level Options
   site: 'https://sijolin.com',
+  output: 'static',
   // base: '/docs',
   trailingSlash: 'never',
 
