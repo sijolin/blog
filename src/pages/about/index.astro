@@ -4,10 +4,9 @@ import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
-import zotero_icon from '@/assets/tools/zotero.png'
 import v2ray_icon from '@/assets/tools/v2ray.png'
 import wenxiaobai_icon from '@/assets/tools/wenxiaobai.png'
-
+import zotero_icon from '@/assets/tools/zotero.png'
 
 const headings = [
   { depth: 2, slug: 'hobbies', text: 'Hobbies' },
@@ -99,7 +98,7 @@ const headings = [
         name: 'Zotero',
         description: 'Reference Management',
         href: 'https://www.zotero.org/',
-        icon: zotero_icon
+        icon: import('@/assets/tools/zotero.png')
       }
     ]}
   />
