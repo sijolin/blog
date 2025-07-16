@@ -113,7 +113,7 @@ export const integ: IntegrationUserConfig = {
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
       { name: 'Link', val: 'https://sijolin.com/' },
-      { name: 'Avatar', val: 'https://sijolin.com/avatar.png' }
+      { name: 'Avatar', val: 'https://sijolin.com/images/avatar.png' }
     ]
   },
   // Enable page search function
