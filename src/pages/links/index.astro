@@ -10,7 +10,8 @@ import FriendList from '@/components/links/FriendList.astro'
 const headings = [
   { depth: 2, slug: 'common-links', text: 'Common Links' },
   { depth: 2, slug: 'special-links', text: 'Special Links' },
-  { depth: 2, slug: 'apply-links', text: 'Apply Links' }
+  { depth: 2, slug: 'apply-links', text: 'Apply Links' },
+  { depth: 2, slug: 'small-circle', text: 'Small Circle' }
 ]
 
 const { friends } = links
@@ -43,13 +44,27 @@ const linksConf = config.integ.links
     }
   </blockquote>
 
-  <p>
-    申请时还请按照这个模板留言。此外有关申请说明：
-  </p>
+  <p>申请时还请按照这个模板留言。此外有关申请说明：</p>
   <ul>
     <li>在你的友链上添加了本站；</li>
     <li>请确保你的站点活着；</li>
     <li>博客内容不违反国家法律。</li>
   </ul>
   <Comment slot='bottom' />
+
+  <h2 id='small-circle'>Small Circle</h2>
+  <div id='friend-circle-lite-root' class='not-prose'>Loading...</div>
+  <script>
+    import '@/assets/styles/fc.css'
+
+    import { FriendCircle } from '@/plugins/friendCircle'
+
+    const fc = new FriendCircle()
+    fc.init({
+      private_api_url: '<your-fc-lite-server>',
+      page_turning_number: 10,
+      error_img: 'https://cravatar.cn/avatar/57d8260dfb55501c37dde588e7c3852c'
+    })
+    fc.load()
+  </script>
 </PageLayout>
