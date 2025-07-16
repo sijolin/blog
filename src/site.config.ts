@@ -3,7 +3,7 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // === Basic configuration ===
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: "Sijolin's Blog",
+  title: "Sijolin' Blog",
   /** Will be used in index page & copyright declaration */
   author: 'Sijolin',
   /** Description metadata for your website. Can be used in page metadata. */
@@ -112,8 +112,8 @@ export const integ: IntegrationUserConfig = {
     applyTip: [
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
-      { name: 'Link', val: 'https://astro-pure.js.org/' },
-      { name: 'Avatar', val: 'https://astro-pure.js.org/favicon/favicon.ico' }
+      { name: 'Link', val: 'https://sijolin.com/' },
+      { name: 'Avatar', val: 'https://sijolin.com/avatar.png' }
     ]
   },
   // Enable page search function
