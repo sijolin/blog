@@ -52,7 +52,9 @@ aside {
   aside section p {
     margin: 0 !important;
   }
-  aside p,
+  aside p {
+    color: var(--aside-color-lightness);
+  }
   aside.content ul {
     color: var(--theme-text);
   }
