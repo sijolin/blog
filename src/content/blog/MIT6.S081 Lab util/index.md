@@ -43,8 +43,8 @@ int main(int argc, char *argv[]) {
 #include "kernel/types.h"
 #include "user/user.h"
 
-#define READEND 0 // 
-#define WRITEEDN 1 // 
+#define READEND 0
+#define WRITEEDN 1
 
 int main() {
   int p1[2]; // 父对子
@@ -191,7 +191,7 @@ struct dirent {
 
 位于 stat.h 中的 `struct stat`，用来描述文件元数据：
 
-```C
+```c
 #define T_DIR     1   // Directory
 #define T_FILE    2   // File
 #define T_DEVICE  3   // Device
@@ -209,7 +209,7 @@ struct stat {
 
 依旧是通过递归实现，代码与 *ls.c* 存在大量重叠：
 
-```C
+```c
 #include "kernel/types.h"
 #include "kernel/stat.h"
 #include "user/user.h"
@@ -292,7 +292,7 @@ void find(char *path, char *file) {
 
 
 
-```C
+```c++
 #include "kernel/types.h"
 #include "user/user.h"
 #include "kernel/param.h"

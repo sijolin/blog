@@ -85,10 +85,16 @@ export default defineConfig({
     ],
     // https://docs.astro.build/en/guides/syntax-highlighting/
     shikiConfig: {
+      theme: 'dracula',
       themes: {
         light: 'github-light',
         dark: 'github-dark'
       },
+      defaultColor: false, // 禁用默认色
+      langAlias: {
+        C: 'c'
+      },
+      wrap: true, // 启用自动换行以防止水平滚动
       transformers: [
         transformerNotationDiff(),
         transformerNotationHighlight(),
