@@ -3,11 +3,16 @@ title: MIT6.S081 Lab util
 description: 'Lab util的解答'
 publishDate: 2025-07-17 17:52:52
 tags: ['MIT6.S081']
+comment: true
 ---
 
 
 
-# sleep
+## sleep
+
+暂停用户指定的时钟周期数。
+
+首先是获取命令行参数（可以参考 *rm.c*），将其转化成 `int` 类型后再进行系统调用。
 
 ```C
 #include "kernel/types.h"
@@ -28,7 +33,11 @@ int main(int argc, char *argv[]) {
 
 
 
-# pingpong
+## pingpong
+
+在两个进程之间传递一个字节。
+
+
 
 关于管道的两个端口：
 
@@ -90,7 +99,7 @@ int main() {
 
 
 
-# primes
+## primes
 
 通过创建子进程和管道来筛选素数，就像一个筛网一样层层筛选：
 
@@ -169,7 +178,7 @@ void child(int *pl) {
 
 
 
-# find
+## find
 
 在目录树中查找所有具有特定名称的文件，将其打印出来。此函数重点考查文件系统。
 
@@ -282,7 +291,7 @@ void find(char *path, char *file) {
 
 
 
-# xargs
+## xargs
 
 从标准输入读取行数据，并为每行数据执行指定命令，将该行内容作为命令参数传入。
 

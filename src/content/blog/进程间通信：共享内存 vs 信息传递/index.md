@@ -15,7 +15,7 @@ commnet: true
 
 
 
-# 进程
+## 进程
 
 
 
@@ -31,7 +31,7 @@ commnet: true
 
 
 
-# 共享内存
+## 共享内存
 
 顾名思义，这种机制允许进程**直接共享内存空间**。
 当系统上同时运行多个进程时，操作系统会为每个进程分配一个单独的内存块，这被称为**进程地址空间**。通过一种特权指令的机制，操作系统强制隔离，防止进程访问彼此的内存。如果有一个进程试图读取或写入另一个进程的地址空间，操作系统将立即中断并终止该进程，强制执行隔离策略以确保数据安全。
@@ -49,7 +49,7 @@ commnet: true
 
 
 
-# 消息队列
+## 消息队列
 
 
 
@@ -79,6 +79,6 @@ commnet: true
 
 
 
-# 其它资源
+## 其它资源
 
 - B站的双语字幕（机翻）版本：[【双语视界】进程间通信之争：共享内存 vs 消息传递](https://www.bilibili.com/video/BV1xjGFzRESy/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=74ec4f72a4bfcd8ce6aa18434e22e349)

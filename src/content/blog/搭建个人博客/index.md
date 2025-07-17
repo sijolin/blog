@@ -8,11 +8,12 @@ comment: true
 ---
 
 
+
 对于Git和GitHub的配置和使用在此不再赘述，在互联网中能找到大量优秀的讲解。
 
 
 
-# 创建 Github Pages仓库
+## 创建 Github Pages仓库
 
 在Github创建一个新的仓库：
 
@@ -25,9 +26,7 @@ comment: true
 
 
 
-
-
-# 安装nodejs和Hexo
+## 安装nodejs和Hexo
 
 输入以下命令安装`Node.js`和`npm`：
 
@@ -53,7 +52,7 @@ hexo -v  # 检查 Hexo 版本
 
 初始化 `Hexo `项目：
 
-```Shell
+```shell
 cd Blog # 转到博客根目录
 hexo init
 npm install # 安装依赖
@@ -63,7 +62,7 @@ npm install # 安装依赖
 
 之后便可以运行 `Hexo `的本地服务器：
 
-```She
+```shell
 hexo s
 ```
 
@@ -103,7 +102,7 @@ comments: #是否允许评论
 
 如果只是临时修改然后看看效果，或者排查错误，可以使用 
 
-```she
+```shell
 hexo s
 ```
 
@@ -121,7 +120,7 @@ hexo d
 
 
 
-# 部署 Hexo 到 GitHub Pages
+## 部署 Hexo 到 GitHub Pages
 
 接下来需要将本地的博客部署到 GitHub，使其能够在网上访问。
 
@@ -156,7 +155,7 @@ deploy:
 
 
 
-# 域名绑定
+## 域名绑定
 
 
 
@@ -233,13 +232,13 @@ hexo d
 
 
 
-# 设置NexT主题
+## 设置NexT主题
 
 可以到[Themes | Hexo](https://hexo.io/themes/)挑选自己喜欢的主题，这里选择使用人数最多的[NexT](https://theme-next.js.org/docs/)主题。
 
 在博客的**根目录**安装主题：
 
-```Shelll
+```shell
 npm install hexo-theme-next
 ```
 
@@ -247,7 +246,7 @@ npm install hexo-theme-next
 
 这里默认安装的是v7.8.0的版本，但是其不支持我们后面用到的Waline评论系统，因此需要将其升级到最新版本，打开**根目录**输入：
 
-```Shel
+```shell
 npm install hexo-theme-next@latest
 ```
 
@@ -303,11 +302,11 @@ scheme: Gemini
 
 
 
-# 主题优化
+## 主题优化
 
 
 
-## 设置菜单
+### 设置菜单
 
 打开主题配置文件`_config.next.yml`，查找`menu`，将对应项前面的注释符#删除就行：
 
@@ -365,7 +364,7 @@ comments: false
 
 
 
-## 设置头像
+### 设置头像
 
 
 
@@ -386,7 +385,7 @@ avatar:
 
 
 
-## 设置背景
+### 设置背景
 
 先设置背景图片，将 `_config.next.yml`开头中取消对 `style`的注释：
 
@@ -433,7 +432,7 @@ footer: source/_data/footer.njk
 
 
 
-## 添加顶部加载条
+### 添加顶部加载条
 
 在**根目录**下使用终端命令：
 
@@ -461,7 +460,7 @@ pace:
 
 
 
-## 设置博文内链接为蓝色
+设置博文内链接为蓝色
 
 打开 `node_modules/hexo-theme-next/source/css/_common/components/post/post-body.styl`文件，在其末尾添加代码：
 
@@ -489,7 +488,7 @@ pace:
 
 
 
-## 显示文章字数和阅读时长
+### 显示文章字数和阅读时长
 
 在**根目录**执行以下命令来安装模块：
 
@@ -523,7 +522,7 @@ symbols_count_time:
 
 
 
-## 文章末尾添加版权说明
+### 文章末尾添加版权说明
 
 在 `_confit.next.yml`中查找 `creative_commons`，作出修改：
 
@@ -548,7 +547,7 @@ creative_commons:
 
 
 
-## 添加访问和阅读量统计
+### 添加访问和阅读量统计
 
 在 `node_modules/hexo-theme-next/layout/_third-party/analytics`目录下创建新文件 `busuanzi_counter.njk`，并输入以下代码：
 
@@ -594,7 +593,7 @@ busuanzi_count:
 
 
 
-## 部署评论功能
+### 部署评论功能
 
 这里采用的是 [Waline](https://waline.js.org/)评论系统，其可以支持匿名评论和登录评论，而且内容支持多种格式。
 
@@ -637,7 +636,7 @@ waline:
 
 
 
-## 设置建站时间
+### 设置建站时间
 
 查找 `_config.next.yml`中的 `since`，将日期修改为建站日期：
 
@@ -649,7 +648,7 @@ footer:
 
 
 
-## 添加社交链接
+### 添加社交链接
 
 查找 `_config.next.yml`中的 `social`，将要添加的选项取消注释：
 
@@ -668,11 +667,11 @@ social:
 
 
 
-## 在文章中插入图片
+### 在文章中插入图片
 
 首先在**根目录**下使用命令安装插件 [hexo-renderer-marked](https://link.zhihu.com/?target=https%3A//github.com/hexojs/hexo-renderer-marked)：
 
-```shel
+```shell
 npm install hexo-renderer-marked
 ```
 
@@ -705,7 +704,7 @@ marked:
 
 
 
-## 文章目录配置
+### 文章目录配置
 
 在 `_config.next.yml`中查找 `toc`，可以自定义配置目录的显示：
 
@@ -724,7 +723,7 @@ toc:
 
 
 
-## 支持mathjax公式
+### 支持mathjax公式
 
 在 `_config.next.yml`中查找 `mathjax`：
 
@@ -737,7 +736,7 @@ mathjax:
 
 
 
-## 博文置顶
+### 博文置顶
 
 在根目录输入以下命令：
 
@@ -790,7 +789,7 @@ top: true
 
 
 
-# 参考文章
+## 参考文章
 
 - [Getting Started | NexT](https://theme-next.js.org/docs/getting-started/)
 

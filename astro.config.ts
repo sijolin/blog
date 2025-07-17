@@ -3,6 +3,8 @@ import AstroPureIntegration from 'astro-pure'
 import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
+import remarkDirective from 'remark-directive'
+import remarkAdmonitions from 'remark-admonitions'
 
 // Others
 // import { visualizer } from 'rollup-plugin-visualizer'
@@ -70,7 +72,7 @@ export default defineConfig({
   },
   // Markdown Options
   markdown: {
-    remarkPlugins: [remarkMath],
+    remarkPlugins: [remarkMath, remarkAdmonitions, remarkDirective],
     rehypePlugins: [
       [rehypeKatex, {}],
       rehypeHeadingIds,
