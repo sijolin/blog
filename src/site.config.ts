@@ -62,7 +62,7 @@ export const theme: ThemeUserConfig = {
     links: [
       // Registration link
       {
-        title: '萌 ICP 备 114514号',
+        title: '饿 ICP 备 114514号',
         link: 'https://www.travellings.cn/go.html',
         style: 'text-sm opacity-75 hover:opacity-100' // 悬停变色 + 字体大小
       },
