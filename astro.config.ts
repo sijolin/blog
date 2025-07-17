@@ -3,8 +3,9 @@ import AstroPureIntegration from 'astro-pure'
 import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
-import remarkDirective from 'remark-directive'
-import remarkAdmonitions from 'remark-admonitions'
+import mdx from '@astrojs/mdx'
+import { asideAutoImport, astroAsides } from './src/plugins/astro-asides.ts'
+import  AutoImport from 'astro-auto-import'
 
 // Others
 // import { visualizer } from 'rollup-plugin-visualizer'
@@ -52,7 +53,11 @@ export default defineConfig({
   integrations: [
     // astro-pure will automatically add sitemap, mdx & unocss
     // sitemap(),
-    // mdx(),
+    AutoImport({
+      imports: [asideAutoImport],
+    }),
+    astroAsides(),
+    mdx(),
     AstroPureIntegration(config)
     // (await import('@playform/compress')).default({
     //   SVG: false,
@@ -72,7 +77,7 @@ export default defineConfig({
   },
   // Markdown Options
   markdown: {
-    remarkPlugins: [remarkMath, remarkAdmonitions, remarkDirective],
+    remarkPlugins: [remarkMath],
     rehypePlugins: [
       [rehypeKatex, {}],
       rehypeHeadingIds,
