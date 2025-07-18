@@ -1,4 +1,4 @@
-aside {
+/* aside {
     --aside-color-base: var(--color-base-purple);
     --aside-color-lightness: 54%;
     --aside-accent-color: hsl(
@@ -76,4 +76,4 @@ aside {
   .danger {
     --aside-color-lightness: 54%;
     --aside-color-base: var(--color-base-red);
-  }
+  } */
