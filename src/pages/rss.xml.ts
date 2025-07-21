@@ -6,7 +6,7 @@ import type { Root } from 'mdast'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
-import { unified } from 'unified'
+import  unified  from 'unified'
 import { visit } from 'unist-util-visit'
 import config from 'virtual:config'
 
