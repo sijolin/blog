@@ -1,56 +1,37 @@
 {
   "main": {
-    "id": "01cadd3886dc5847",
+    "id": "f7ae40f7ae80ad04",
     "type": "split",
     "children": [
       {
-        "id": "9d55b540c5a03e9a",
+        "id": "f9a60d0345dfca18",
         "type": "tabs",
         "children": [
           {
-            "id": "3e28c59e0eb9e4f9",
+            "id": "f03a27ecbaa1476d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blog/搭建个人博客（Hexo）.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "搭建个人博客（Hexo）"
-            }
-          },
-          {
-            "id": "0414e73dc6c4bf44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blog/搭建个人博客（Hexo）.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "搭建个人博客（Hexo）"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "b6a07ecbd2aeb78d",
+    "id": "9b95899c131356b7",
     "type": "split",
     "children": [
       {
-        "id": "8e597481734f92cb",
+        "id": "bf0216682f7f2454",
         "type": "tabs",
         "children": [
           {
-            "id": "db34336fe799baac",
+            "id": "e8a682573fd1db9a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,7 +44,7 @@
             }
           },
           {
-            "id": "180e3621483b0721",
+            "id": "deeb81d750d6fb8f",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -80,7 +61,7 @@
             }
           },
           {
-            "id": "00b796ee0ee3e2a0",
+            "id": "bf69c5aaef440475",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -96,15 +77,15 @@
     "width": 300
   },
   "right": {
-    "id": "44e692353d2f35aa",
+    "id": "94bc986c3eee9915",
     "type": "split",
     "children": [
       {
-        "id": "3c032e24a3b1931f",
+        "id": "9292fc2f1e81551e",
         "type": "tabs",
         "children": [
           {
-            "id": "91aa68dbc1894999",
+            "id": "c276df18ca3e1e05",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -122,7 +103,7 @@
             }
           },
           {
-            "id": "25a8fee23bc45d74",
+            "id": "0dba1dba97938756",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -135,7 +116,7 @@
             }
           },
           {
-            "id": "42e4abdc8b838aa8",
+            "id": "c75fc5a8d9a42614",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -150,7 +131,7 @@
             }
           },
           {
-            "id": "c892e2910e746e76",
+            "id": "4d2c1641950e362b",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -180,17 +161,6 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "db34336fe799baac",
-  "lastOpenFiles": [
-    "Resource/Template",
-    "未命名.md",
-    "Blog",
-    "Blog/MIT6.S081 Labs/0_环境配置.md",
-    "Resource/Image/1 1.png",
-    "Resource/Image/1.png",
-    "Resource/Template/blog.md",
-    "Resource/Image",
-    "Resource",
-    "Blog/搭建个人博客（Hexo）.md"
-  ]
+  "active": "f03a27ecbaa1476d",
+  "lastOpenFiles": []
 }

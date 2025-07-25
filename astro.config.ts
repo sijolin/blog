@@ -4,7 +4,6 @@ import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
 import mdx from '@astrojs/mdx'
-import { asideAutoImport, astroAsides } from './src/plugins/astro-asides.ts'
 import  AutoImport from 'astro-auto-import'
 
 // Others
@@ -54,9 +53,8 @@ export default defineConfig({
     // astro-pure will automatically add sitemap, mdx & unocss
     // sitemap(),
     AutoImport({
-      imports: [asideAutoImport],
+      imports: [],
     }),
-    astroAsides(),
     mdx(),
     AstroPureIntegration(config)
     // (await import('@playform/compress')).default({

@@ -14,7 +14,7 @@ comment: true
 
 系统为Archlinux物理机，环境如下：
 
-![](./pictures/1.png)
+![](Image/1.png)
 
 学习的课程版本为[Fall 2021](https://pdos.csail.mit.edu/6.828/2021/schedule.html)，因为这一版本兼容新版本的 `qemu`，而2020版本不兼容，需要额外降级。
 
@@ -24,12 +24,12 @@ comment: true
 
 但是我按照其步骤配置时，另外发现一个坑。即修改完 `runcmd`函数时再次运行 `make qemu`，出现以下报错：
 
-![](./pictures/5.png)
+![](Image/2.png)
 
 
 
 解决方法是修改 `user/usertests.c`文件中的 `rwsbrk()`函数声明：
 
-![](./pictures/6.png)
+![](Image/3.png)
 
 之后便可编译成功！
