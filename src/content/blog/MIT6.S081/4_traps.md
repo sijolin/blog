@@ -3,7 +3,7 @@ title: MIT6.S081 Lab traps
 description: '实现系统调用和中断处理，分析 trapframe 和上下文切换。'
 publishDate: 2025-07-25 18:52:32
 tags: ['MIT6.S081']
-comment:true
+comment: true
 ---
 
 
