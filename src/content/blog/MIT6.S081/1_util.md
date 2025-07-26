@@ -1,6 +1,6 @@
 ---
 title: MIT6.S081 Lab util
-description: 'Lab util的解答'
+description: '添加一些简单的系统调用，主要涉及进程和文件描述符的知识点。'
 publishDate: 2025-07-17 17:52:52
 tags: ['MIT6.S081']
 comment: true
